@@ -1,0 +1,172 @@
+/* Your original CSS */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.main {
+   width: 100%;
+   background: url(./background.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 120vh;
+   position: relative;
+   font-family: sans-serif;
+}
+
+.navbar {
+   width: 86%;
+   display: flex;
+   margin: auto;
+   padding: 15px 0;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar .logo {
+   width: 160px;
+   cursor: pointer;
+   margin-top: -1%;
+   margin-left: -2%;
+}
+
+ul {
+   margin-top: -4%;
+}
+
+ul li {
+   list-style: none;
+   display: inline-block;
+   padding: 10px 16px;
+}
+
+ul li a {
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   color: darkslategray;
+   margin-top: -3%;
+   transition: 0.4s ease;
+}
+
+ul li a:hover {
+   color: rgb(230, 104, 59);
+}
+
+.pro {
+   padding: 20px;
+   text-align: left;
+   margin-left: 25%;
+   line-height: 30px;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.pro h3 {
+   text-decoration: underline double;
+}
+
+.pro p {
+   line-height: 40px;
+}
+
+.pro p span {
+   color: red;
+}
+
+.img {
+   padding: 20px;
+   text-align: left;
+   margin-left: 25%;
+   line-height: 30px;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.img img {
+   border: 10px;
+   border-style: groove;
+   border-color: whitesmoke;
+   border-top-left-radius: 100px;
+   border-bottom-right-radius: 100px;
+   border-top-color: red;
+   border-bottom-color: red;
+   border-right-color: black;
+   border-left-color: black;
+   border-left-style: none;
+   border-right-style: none;
+}
+
+/* Responsive Design */
+
+/* For tablets (width <= 768px) */
+@media (max-width: 768px) {
+   .navbar {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+   }
+
+   ul {
+       margin-top: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+   }
+
+   ul li {
+       padding: 8px;
+   }
+
+   .navbar .logo {
+       width: 140px; /* Slightly smaller logo for tablets */
+   }
+
+   .pro, .img {
+       margin-left: 10%;
+       margin-right: 10%;
+       font-size: 14px;
+       line-height: 28px;
+   }
+
+   .pro h3 {
+       font-size: 18px;
+   }
+}
+
+/* For mobile devices (width <= 480px) */
+@media (max-width: 480px) {
+   .navbar .logo {
+       width: 100px; /* Further reduce logo size for mobiles */
+   }
+
+   ul {
+       flex-direction: column;
+       align-items: center;
+       gap: 5px;
+   }
+
+   ul li a {
+       font-size: 14px;
+   }
+
+   .pro, .img {
+       margin-left: 5%;
+       margin-right: 5%;
+       font-size: 12px;
+       line-height: 24px;
+   }
+
+   .pro h3 {
+       font-size: 16px;
+   }
+
+   .img img {
+       width: 100%; /* Ensure images are responsive */
+       max-width: 300px; /* Optional: Limit the image size */
+       height: auto; /* Maintain aspect ratio */
+   }
+}

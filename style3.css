@@ -1,0 +1,164 @@
+/* Your original CSS */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.main {
+   width: 100%;
+   background: url(./background.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 120vh;
+   position: relative;
+   font-family: sans-serif;
+}
+
+.navbar {
+   width: 86%;
+   display: flex;
+   margin: auto;
+   padding: 15px 0;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar .logo {
+   width: 160px;
+   cursor: pointer;
+   margin-top: -1%;
+   margin-left: -2%;
+}
+
+ul {
+   margin-top: -4%;
+}
+
+ul li {
+   list-style: none;
+   display: inline-block;
+   padding: 10px 16px;
+}
+
+ul li a {
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   color: darkslategray;
+   margin-top: -3%;
+   transition: 0.4s ease;
+}
+
+ul li a:hover {
+   color: rgb(230, 104, 59);
+}
+
+.skill {
+   padding: 20px;
+   text-align: left;
+   margin-left: 25%;
+   line-height: 30px;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.skill h3 {
+   text-decoration: double underline;
+}
+
+.skill p {
+   line-height: 40px;
+}
+
+.skill span {
+   color: red;
+}
+
+.cer {
+   padding: 20px;
+   text-align: left;
+   margin-left: 25%;
+   line-height: 30px;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.cer h3 {
+   text-decoration: underline double;
+}
+
+.cer p {
+   line-height: 40px;
+}
+
+.cer span {
+   color: red;
+}
+
+/* Responsive Design */
+
+/* For tablets and small screens (width <= 768px) */
+@media (max-width: 768px) {
+   .navbar {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+   }
+
+   ul {
+       margin-top: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+   }
+
+   ul li {
+       padding: 8px;
+   }
+
+   .navbar .logo {
+       width: 140px; /* Slightly smaller logo for tablets */
+   }
+
+   .skill, .cer {
+       margin-left: 10%;
+       margin-right: 10%;
+       font-size: 14px;
+       line-height: 28px;
+   }
+
+   .skill h3, .cer h3 {
+       font-size: 18px;
+   }
+}
+
+/* For mobile devices (width <= 480px) */
+@media (max-width: 480px) {
+   .navbar .logo {
+       width: 100px; /* Further reduce logo size for mobiles */
+   }
+
+   ul {
+       flex-direction: column;
+       align-items: center;
+       gap: 5px;
+   }
+
+   ul li a {
+       font-size: 14px;
+   }
+
+   .skill, .cer {
+       margin-left: 5%;
+       margin-right: 5%;
+       font-size: 12px;
+       line-height: 24px;
+   }
+
+   .skill h3, .cer h3 {
+       font-size: 16px;
+   }
+}
