@@ -4,7 +4,7 @@
  }
  .main{
     width: 100%;
-    background: url(./background.jpg);
+    background: url(./bg2.jpeg);
     background-position: center;
     background-size: cover;
     height: 120vh;
@@ -97,11 +97,13 @@ ul li a:hover{
  }
  .image img{
     position: absolute;
-    height: 140%;
+    height: 50%;
     left: 80%;
     transform: translate(-55%);
-    bottom: 0;
-    transition: left 1s ease;
+    bottom: 300px;
+    border: 20px;
+    border-style:hidden;
+   border-radius: ;
  }
 
 
